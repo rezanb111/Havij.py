@@ -6,9 +6,10 @@ import threading
 import os
 
 # --- CONFIGURATION ---
-TOKEN = '8217747832:AAH4mZ4yunE96yiapKudaR3zNtH9rZIpjyU' # توکن جدید شما
+# توکن جدید و آیدی شما
+TOKEN = '8217747832:AAH4mZ4yunE96yiapKudaR3zNtH9rZIpjyU' 
 ADMIN_ID = 8242274171 
-TARGET_GROUP = "engwechat" # بدون @ برای چک کردن دقیق‌تر
+TARGET_GROUP = "engwechat" 
 PHOTO_URL = "https://i.ibb.co/v4mK8m7/luxury-black-gold.jpg"
 
 bot = telebot.TeleBot(TOKEN)
@@ -34,7 +35,111 @@ def db_query(query, params=(), fetch=False):
     return res
 
 # --- AUTO WORD CHALLENGE (Every 30 Mins) ---
-words = ["TELEGRAM", "CRYPTO", "PYTHON", "LUXURY", "GOLDEN", "SERVER", "NETWORK"]
+words = ["TELEGRAM", "CRYPTO", "PYTHON", "LUXURY", "GOLDEN", "SERVER", "NETWORK", "SUCCESS", "ENGLISH"]
+current_word = None
+
+def word_challenge():
+    global current_word
+    while True:
+        time.sleep(1800) # هر ۳۰ دقیقه
+        current_word = random.choice(words)
+        scrambled = "".join(random.sample(current_word, len(current_word)))
+        try:
+            bot.send_message(f"@{TARGET_GROUP}", f"🏆 **WORD CHALLENGE!**\nUnscramble the word to win **20 XP**:\n\n✨ `{scrambled}` ✨")
+        except: pass
+
+threading.Thread(target=word_challenge, daemon=True).start()
+
+# --- COMMANDS ---
+
+@bot.message_handler(commands=['top'])
+def leaderboard(message):
+    rows = db_query("SELECT name, xp FROM users ORDER BY xp DESC LIMIT 10", fetch=True)
+    res = "🏆 **ELITE LEADERBOARD** 🏆\n" + "—"*20 + "\n"
+    for i, row in enumerate(rows, 1):
+        name = row[0] if row[0] else "User"
+        res += f"{i}. {name} » `{row[1]}` XP\n"
+    bot.send_message(message.chat.id, res, parse_mode='Markdown')
+
+@bot.message_handler(commands=['me', 'status', 'start'])
+def my_status(message):
+    # چک کردن یا ثبت کاربر در دیتابیس
+    user = db_query("SELECT xp, msgs FROM users WHERE user_id=?", (message.from_user.id,), fetch=True)
+    if not user:
+        db_query("INSERT OR IGNORE INTO users (user_id, name, xp, msgs) VALUES (?, ?, 0, 0)", 
+                 (message.from_user.id, message.from_user.first_name))
+        xp, msgs = 0, 0
+    else:
+        xp, msgs = user[0]
+
+    caption = (f"⚜️ **LUXURY STATUS** ⚜️\n\n"
+               f"👤 **User:** {message.from_user.first_name}\n"
+               f"✨ **XP Points:** `{xp}`\n"
+               f"✉️ **Messages:** `{msgs}`\n"
+               f"━━━━━━━━━━━━━━\n"
+               f"👑 *Keep shining in @{TARGET_GROUP}*")
+    
+    try:
+        bot.send_photo(message.chat.id, PHOTO_URL, caption=caption, parse_mode='Markdown')
+    except:
+        bot.send_message(message.chat.id, caption, parse_mode='Markdown')
+
+@bot.message_handler(commands=['send'])
+def admin_transfer(message):
+    if message.from_user.id != ADMIN_ID:
+        bot.reply_to(message, "🚫 Access Denied. Only Admin can transfer XP.")
+        return
+    
+    if not message.reply_to_message:
+        bot.reply_to(message, "❌ Reply to a user's message to reward them.")
+        return
+    
+    try:
+        amount = int(message.text.split()[1])
+        db_query("UPDATE users SET xp=xp+? WHERE user_id=?", (amount, message.reply_to_message.from_user.id))
+        bot.send_message(message.chat.id, f"✅ Admin gifted `{amount}` XP to {message.reply_to_message.from_user.first_name}!")
+    except:
+        bot.reply_to(message, "❌ Use: `/send 100` (Reply to user)")
+
+@bot.message_handler(commands=['dice'])
+def dice_game(message):
+    # ارسال تاس
+    dice_msg = bot.send_dice(message.chat.id)
+    val = dice_msg.dice.value
+    
+    # ۳ ثانیه صبر برای اتمام انیمیشن تاس
+    time.sleep(3.5)
+    
+    if val >= 4:
+        db_query("UPDATE users SET xp=xp+20 WHERE user_id=?", (message.from_user.id,))
+        bot.send_message(message.chat.id, f"🔥 WIN! You got 20 XP.", reply_to_message_id=message.message_id)
+    else:
+        db_query("UPDATE users SET xp=xp-10 WHERE user_id=?", (message.from_user.id,))
+        bot.send_message(message.chat.id, f"💀 LOSS! 10 XP deducted.", reply_to_message_id=message.message_id)
+
+# --- WORD CHALLENGE ANSWER CHECKER ---
+@bot.message_handler(func=lambda m: current_word and m.text and m.text.upper() == current_word)
+def check_answer(message):
+    global current_word
+    db_query("UPDATE users SET xp=xp+20 WHERE user_id=?", (message.from_user.id,))
+    bot.reply_to(message, f"🎉 CORRECT! {message.from_user.first_name} won 20 XP!")
+    current_word = None
+
+# --- GLOBAL MESSAGE HANDLER ---
+@bot.message_handler(func=lambda m: True)
+def main_handler(message):
+    # آپدیت مشخصات و امتیاز در صورت چت در گروه
+    db_query("INSERT OR IGNORE INTO users (user_id, name, xp, msgs) VALUES (?, ?, 0, 0)", 
+             (message.from_user.id, message.from_user.first_name))
+    
+    # فقط اگر در گروه پیام بدهد امتیاز (XP) می‌گیرد
+    if message.chat.type != 'private':
+        db_query("UPDATE users SET xp=xp+2, msgs=msgs+1, name=? WHERE user_id=?", 
+                 (message.from_user.first_name, message.from_user.id))
+
+# اجرای ربات
+print("--- LUXURY ACTIVY BOT IS ONLINE ---")
+bot.infinity_polling()words = ["TELEGRAM", "CRYPTO", "PYTHON", "LUXURY", "GOLDEN", "SERVER", "NETWORK"]
 current_word = None
 
 def word_challenge():
