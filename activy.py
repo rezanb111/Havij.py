@@ -4,13 +4,12 @@ import random
 import time
 import threading
 import os
-from datetime import datetime
 
 # --- CONFIGURATION ---
-TOKEN = '8521540168:AAHfrxPBhvs9e0uA4lpWakST5wPRr0eB4IM'
+TOKEN = '8217747832:AAH4mZ4yunE96yiapKudaR3zNtH9rZIpjyU' # توکن جدید شما
 ADMIN_ID = 8242274171 
-TARGET_GROUP = "@engwechat" # Only works here
-PHOTO_URL = "https://i.ibb.co/v4mK8m7/luxury-black-gold.jpg" # Luxury Profile Background
+TARGET_GROUP = "engwechat" # بدون @ برای چک کردن دقیق‌تر
+PHOTO_URL = "https://i.ibb.co/v4mK8m7/luxury-black-gold.jpg"
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -41,19 +40,15 @@ current_word = None
 def word_challenge():
     global current_word
     while True:
-        time.sleep(1800) # 30 Minutes
+        time.sleep(1800) 
         current_word = random.choice(words)
         scrambled = "".join(random.sample(current_word, len(current_word)))
         try:
-            bot.send_message(TARGET_GROUP, f"🏆 **WORD CHALLENGE!**\nUnscramble the word to win **20 XP**:\n\n✨ `{scrambled}` ✨")
+            # ارسال به گروه اصلی
+            bot.send_message(f"@{TARGET_GROUP}", f"🏆 **WORD CHALLENGE!**\nUnscramble the word to win **20 XP**:\n\n✨ `{scrambled}` ✨")
         except: pass
 
 threading.Thread(target=word_challenge, daemon=True).start()
-
-# --- MIDDLEWARE (Group & Language Check) ---
-@bot.message_handler(func=lambda m: m.chat.username != "engwechat" and m.chat.type != "private")
-def block_others(message):
-    return # Ignore other groups
 
 # --- COMMANDS ---
 
@@ -62,21 +57,33 @@ def leaderboard(message):
     rows = db_query("SELECT name, xp FROM users ORDER BY xp DESC LIMIT 10", fetch=True)
     res = "🏆 **ELITE LEADERBOARD** 🏆\n" + "—"*20 + "\n"
     for i, row in enumerate(rows, 1):
-        res += f"{i}. {row[0]} » `{row[1]}` XP\n"
+        name = row[0] if row[0] else "Unknown"
+        res += f"{i}. {name} » `{row[1]}` XP\n"
     bot.send_message(message.chat.id, res, parse_mode='Markdown')
 
-@bot.message_handler(commands=['me', 'status'])
+@bot.message_handler(commands=['me', 'status', 'start'])
 def my_status(message):
     user = db_query("SELECT xp, msgs FROM users WHERE user_id=?", (message.from_user.id,), fetch=True)
-    if user:
+    
+    # اگر کاربر جدید بود در دیتابیس ثبت شود
+    if not user:
+        db_query("INSERT OR IGNORE INTO users (user_id, name, xp, msgs) VALUES (?, ?, 0, 0)", 
+                 (message.from_user.id, message.from_user.first_name))
+        xp, msgs = 0, 0
+    else:
         xp, msgs = user[0]
-        caption = (f"⚜️ **LUXURY STATUS** ⚜️\n\n"
-                   f"👤 **User:** {message.from_user.first_name}\n"
-                   f"✨ **XP Points:** `{xp}`\n"
-                   f"✉️ **Messages:** `{msgs}`\n"
-                   f"━━━━━━━━━━━━━━\n"
-                   f"👑 *Keep shining in @engwechat*")
+
+    caption = (f"⚜️ **LUXURY STATUS** ⚜️\n\n"
+               f"👤 **User:** {message.from_user.first_name}\n"
+               f"✨ **XP Points:** `{xp}`\n"
+               f"✉️ **Messages:** `{msgs}`\n"
+               f"━━━━━━━━━━━━━━\n"
+               f"👑 *Keep shining in @{TARGET_GROUP}*")
+    
+    try:
         bot.send_photo(message.chat.id, PHOTO_URL, caption=caption, parse_mode='Markdown')
+    except:
+        bot.reply_to(message, caption, parse_mode='Markdown')
 
 @bot.message_handler(commands=['send'])
 def admin_transfer(message):
@@ -114,12 +121,16 @@ def check_answer(message):
     bot.reply_to(message, f"🎉 CORRECT! {message.from_user.first_name} won 20 XP!")
     current_word = None
 
+# --- GLOBAL MESSAGE HANDLER ---
 @bot.message_handler(func=lambda m: True)
 def main_handler(message):
+    # ثبت نام کاربر و افزایش امتیاز (فقط در گروه امتیاز میدهد)
     db_query("INSERT OR IGNORE INTO users (user_id, name, xp, msgs) VALUES (?, ?, 0, 0)", 
              (message.from_user.id, message.from_user.first_name))
-    db_query("UPDATE users SET xp=xp+2, msgs=msgs+1, name=? WHERE user_id=?", 
-             (message.from_user.first_name, message.from_user.id))
+    
+    if message.chat.type != 'private':
+        db_query("UPDATE users SET xp=xp+2, msgs=msgs+1, name=? WHERE user_id=?", 
+                 (message.from_user.first_name, message.from_user.id))
 
 print("--- LUXURY ACTIVY BOT IS ONLINE ---")
 bot.infinity_polling()
