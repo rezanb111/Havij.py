@@ -32,7 +32,7 @@ def db_query(query, params=(), fetch=False):
     conn.close()
     return res
 
-# --- AUTO WORD CHALLENGE (Every 30 Mins) ---
+# --- AUTO WORD CHALLENGE ---
 words = ["TELEGRAM", "CRYPTO", "PYTHON", "LUXURY", "GOLDEN", "SERVER", "NETWORK"]
 current_word = None
 
@@ -43,7 +43,7 @@ def word_challenge():
         current_word = random.choice(words)
         scrambled = "".join(random.sample(current_word, len(current_word)))
         try:
-            bot.send_message(f"@{TARGET_GROUP}", f"🏆 **WORD CHALLENGE!**\nUnscramble the word to win **20 XP**:\n\n✨ `{scrambled}` ✨")
+            bot.send_message(f"@{TARGET_GROUP}", f"🏆 **WORD CHALLENGE!**\nUnscramble the word to win **20 XP**:\n\n✨ `{scrambled}` ✨", disable_notification=True)
         except: pass
 
 threading.Thread(target=word_challenge, daemon=True).start()
@@ -52,15 +52,19 @@ threading.Thread(target=word_challenge, daemon=True).start()
 
 @bot.message_handler(commands=['top'])
 def leaderboard(message):
+    try: bot.delete_message(message.chat.id, message.message_id)
+    except: pass
     rows = db_query("SELECT name, xp FROM users ORDER BY xp DESC LIMIT 30", fetch=True)
     res = "🏆 **ELITE LEADERBOARD** 🏆\n" + "—"*20 + "\n"
     for i, row in enumerate(rows, 1):
         name = row[0] if row[0] else "User"
         res += f"{i}. {name} » `{row[1]}` XP\n"
-    bot.send_message(message.chat.id, res, parse_mode='Markdown')
+    bot.send_message(message.chat.id, res, parse_mode='Markdown', disable_notification=True)
 
 @bot.message_handler(commands=['me', 'status', 'start'])
 def my_status(message):
+    try: bot.delete_message(message.chat.id, message.message_id)
+    except: pass
     user = db_query("SELECT xp, msgs FROM users WHERE user_id=?", (message.from_user.id,), fetch=True)
     if not user:
         db_query("INSERT OR IGNORE INTO users (user_id, name, xp, msgs) VALUES (?, ?, 0, 0)", 
@@ -77,43 +81,57 @@ def my_status(message):
                f"👑 *Keep shining in @{TARGET_GROUP}*")
     
     try:
-        bot.send_photo(message.chat.id, PHOTO_URL, caption=caption, parse_mode='Markdown')
+        bot.send_photo(message.chat.id, PHOTO_URL, caption=caption, parse_mode='Markdown', disable_notification=True)
     except:
-        bot.send_message(message.chat.id, caption, parse_mode='Markdown')
+        bot.send_message(message.chat.id, caption, parse_mode='Markdown', disable_notification=True)
 
 @bot.message_handler(commands=['send'])
 def admin_transfer(message):
+    try: bot.delete_message(message.chat.id, message.message_id)
+    except: pass
     if message.from_user.id != ADMIN_ID:
-        bot.send_message(message.chat.id, "🚫 Access Denied.")
+        bot.send_message(message.chat.id, "🚫 Access Denied.", disable_notification=True)
         return
     if not message.reply_to_message:
-        bot.send_message(message.chat.id, "❌ Reply to a user.")
+        bot.send_message(message.chat.id, "❌ Reply to a user.", disable_notification=True)
         return
     try:
         amount = int(message.text.split()[1])
         db_query("UPDATE users SET xp=xp+? WHERE user_id=?", (amount, message.reply_to_message.from_user.id))
-        bot.send_message(message.chat.id, f"✅ Admin gifted `{amount}` XP!")
+        bot.send_message(message.chat.id, f"✅ Admin gifted `{amount}` XP!", disable_notification=True)
     except:
-        bot.send_message(message.chat.id, "❌ Error in format.")
+        bot.send_message(message.chat.id, "❌ Error in format.", disable_notification=True)
 
 @bot.message_handler(commands=['dice'])
 def dice_game(message):
-    dice_msg = bot.send_dice(message.chat.id)
-    val = dice_msg.dice.value
-    time.sleep(4) # صبر برای انیمیشن تاس
+    try: bot.delete_message(message.chat.id, message.message_id)
+    except: pass
     
-    if val >= 4:
-        db_query("UPDATE users SET xp=xp+20 WHERE user_id=?", (message.from_user.id,))
-        bot.send_message(message.chat.id, f"🔥 WIN! You got 20 XP.", reply_to_message_id=message.message_id)
-    else:
-        db_query("UPDATE users SET xp=xp-10 WHERE user_id=?", (message.from_user.id,))
-        bot.send_message(message.chat.id, f"💀 LOSS! 10 XP deducted.", reply_to_message_id=message.message_id)
+    dice_msg = bot.send_dice(message.chat.id, disable_notification=True)
+    val = dice_msg.dice.value
+    
+    def process_dice():
+        time.sleep(4)
+        if val >= 4:
+            db_query("UPDATE users SET xp=xp+20 WHERE user_id=?", (message.from_user.id,))
+            res_msg = bot.send_message(message.chat.id, f"🔥 WIN! You got 20 XP.", disable_notification=True)
+        else:
+            db_query("UPDATE users SET xp=xp-10 WHERE user_id=?", (message.from_user.id,))
+            res_msg = bot.send_message(message.chat.id, f"💀 LOSS! 10 XP deducted.", disable_notification=True)
+        
+        time.sleep(5)
+        try:
+            bot.delete_message(message.chat.id, dice_msg.message_id)
+            bot.delete_message(message.chat.id, res_msg.message_id)
+        except: pass
+
+    threading.Thread(target=process_dice).start()
 
 @bot.message_handler(func=lambda m: current_word and m.text and m.text.upper() == current_word)
 def check_answer(message):
     global current_word
     db_query("UPDATE users SET xp=xp+20 WHERE user_id=?", (message.from_user.id,))
-    bot.send_message(message.chat.id, f"🎉 CORRECT! {message.from_user.first_name} won 20 XP!")
+    bot.send_message(message.chat.id, f"🎉 CORRECT! {message.from_user.first_name} won 20 XP!", disable_notification=True)
     current_word = None
 
 @bot.message_handler(func=lambda m: True)
