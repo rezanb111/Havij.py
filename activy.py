@@ -52,7 +52,7 @@ threading.Thread(target=word_challenge, daemon=True).start()
 
 @bot.message_handler(commands=['top'])
 def leaderboard(message):
-    rows = db_query("SELECT name, xp FROM users ORDER BY xp DESC LIMIT 10", fetch=True)
+    rows = db_query("SELECT name, xp FROM users ORDER BY xp DESC LIMIT 30", fetch=True)
     res = "🏆 **ELITE LEADERBOARD** 🏆\n" + "—"*20 + "\n"
     for i, row in enumerate(rows, 1):
         name = row[0] if row[0] else "User"
