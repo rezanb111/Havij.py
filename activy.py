@@ -8,7 +8,7 @@ import threading
 TOKEN = '8217747832:AAH4mZ4yunE96yiapKudaR3zNtH9rZIpjyU' 
 ADMIN_ID = 8242274171 
 TARGET_GROUP = "engwechat" 
-PHOTO_URL = "https://i.ibb.co/v4mK8m7/luxury-black-gold.jpg"
+PHOTO_URL = "https://fv5-3.files.fm/thumb_show.php?i=vtbyr62f2c&view&v=1&PHPSESSID=ee4af65bd013fecf948b6e2ba731539140ec3f3c"
 
 bot = telebot.TeleBot(TOKEN)
 
