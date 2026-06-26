@@ -1,0 +1,1112 @@
+
+curl 'https://4nayz.online/worldcup' \
+  -H 'authority: 4nayz.online' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: cf_clearance=LuCREmW_t0oU8vlm4BpuGlsg.vaFB.rtnxeNrZqBVho-1782459317-1.2.1.1-fotBSarTo5Gz1clNywybwGnop.1qmXMzbLOxQr3oW2uQIP.qCVk5wGEjt8Uro8J0t5fUJCOXa5ZAoccfVGQcRV6uyra6FLkIoIGo5bntMfe5VEThTtsety0WxM37EXM_Miw0yuTRARHKVdoTj7rp2.i._0DmzLM7hbqRgHx7lPmXsOwMOsDXZBjVDGCPVcV63H1w.whV74sYpg6hZf6hUkG0fLufmoAN3NpjiE0Xq4N0c5bcQ7iV4fktDtKHHbM1RcKVR.wgFQ.sUV3Dfii7_DM3R0zKkmxl9HHUQ4_A.ciymz57ZIjjSlSQls8Hg9mHi6KgoxgP9PjvtFibRvgQHVCo4gsmNBD0o1lOzdNTYjvc2d9BlaozGaQDRwawYnh4q9xO1UQRbtqMercLx1wXQUjM.aSM3YIuPsLd5wrtNW4f_rNkj2JMJTbZ0OTIuArS' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-arch: ""' \
+  -H 'sec-ch-ua-bitness: ""' \
+  -H 'sec-ch-ua-full-version: "137.0.7337.0"' \
+  -H 'sec-ch-ua-full-version-list: "Chromium";v="137.0.7337.0", "Not/A)Brand";v="24.0.0.0"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-model: "24117RN76G"' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-ch-ua-platform-version: "15.0.0"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: none' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --compressed ;
+curl 'https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700;800&display=swap' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://4nayz.online/assets/logo.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-arch: ""' \
+  -H 'sec-ch-ua-full-version: "137.0.7337.0"' \
+  -H 'sec-ch-ua-platform-version: "15.0.0"' \
+  -H 'Referer: https://4nayz.online/worldcup' \
+  -H 'sec-ch-ua-full-version-list: "Chromium";v="137.0.7337.0", "Not/A)Brand";v="24.0.0.0"' \
+  -H 'sec-ch-ua-bitness: ""' \
+  -H 'sec-ch-ua-model: "24117RN76G"' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://kick.com/favicon.ico?favicon.0dzy5f7hme1.i.ico' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/rajdhani/v17/LDIxapCSOBg7S-QT7p4HM-aGW-rO.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/rajdhani/v17/LDI2apCSOBg7S-QT7pa8FvOreefkkbIx.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACYElEQVR42u2az2oUQRDGfzUzBmV1A/HkzRfwMcRn8CL4DuJFPAl6UBQ8eg6+g+AbiBfxoJi7FwlESIzZnvk8bDU0k0lcyHbSDSkYarZndqe++t81C4CkzvkLLWmh1al3/l1S479jnEKSvo6+uwpFmd6kMjdUTtUD6HI/QFI7sWzVADCzfgJUKB2ALeXUDHgL3ACUaP72uiyR2wIbwINTnmOlB7GAXSAAC+fB14tzIQM6SQPQOG/96EYuVGQW6s3saBSsu+vUdi4AUaubku4nmhYwA67WAuAW8H6F+4p1IQHDxHpbSyW2DMJqdK5xTGWvxGtyT4ArUxYtHcAh8NeBBAdxUAOA4LI9A975eXAgB95jhRossGdmvy60Gz1rkvHdXbRA7HBVIoAhyTC9u8tgZpKkVOhSLdBM1I7/VvGuEM03wCvgkwsfnH9OLFIsgOgaH8zs4wm7OtUQxHMflbSJxgczGy6nEudEv704hdoAxH7nnqQt94o+BrGZ/Vhm0XLTaHTjRxPXHgMvk8xUtAulhSz2Qoc1xUAzSq2tDwcMsHRgXGorMdmVurCLWpu5uaSbo3b6j5ntl14HomKfAjvANz92gCc+sulqsMA1P1Ka1VSJ0438wnmfe6ySDrbOOqmw0bmN1oofq5xLKxE1/dMrZ/w8uL++Bq5T8HA3CrZnZtvHLkrPHUDx3WgraSPZYQ3AJplmormCOJjZIKlx3nvWCCMXatcFLHcdMGAr53NyAzgCtjn+ku8uMF9HYOcCIO8a94GHE4H9BbhTMoBU2Kna0NbiQie96F7be7PLP3tcNP0DBUNNNcDu9F8AAAAASUVORK5CYII=' \
+  -H 'Referer;' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --compressed ;
+curl 'https://4nayz.online/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-arch: ""' \
+  -H 'sec-ch-ua-full-version: "137.0.7337.0"' \
+  -H 'sec-ch-ua-platform-version: "15.0.0"' \
+  -H 'Referer: https://4nayz.online/worldcup' \
+  -H 'sec-ch-ua-full-version-list: "Chromium";v="137.0.7337.0", "Not/A)Brand";v="24.0.0.0"' \
+  -H 'sec-ch-ua-bitness: ""' \
+  -H 'sec-ch-ua-model: "24117RN76G"' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'Origin: https://4nayz.online' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://worldtimeapi.org/api/timezone/Etc/UTC' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'Origin: https://4nayz.online' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'Origin: https://4nayz.online' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://apis.google.com/js/api.js?onload=__iframefcb118098' \
+  -H 'authority: apis.google.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: __Secure-3PSID=g.a000_QiHqvT3WQJeMMll0wx5Tkm9Gbe3tipe5WogjyV1F_t3-o8a09Mjac06eFvhyBYgvZmD3QACgYKASISARESFQHGX2MiQ3TH5Dt4rcqth06sUhyFiBoVAUF8yKq79AL2gCor5Yx-HQm9qaw70076; __Secure-3PAPISID=y9lIgo69e_WRdFAs/AYwQN3pFroOjX8T2L; NID=532=MXwWTYYl3mJgbz7BeF5lbwcoAgP06iukQq9Q8FDuveLdX-EtSUMbEDPAZq3FRLvNjh2jrL8INKezLnHyJ0FQSFV_jJRjO8Ax44TVZ3i5B5ynSn6mYJMyqbEesiIhy1EG2T081zhfP9bY_sO-gkCD17iyCLX15PkEVzcjwrno4ixX2TwUdl0bLJvnWYLqSFLLvbWid1l_VTM6UmhMI0irIpgskQ2gwivJSo9FLHhr-SUiw9SU2TGEQI6XFtqREXYm4cwGOaomecDi0dbzhNwClffo8T-FbBN3GcMABALTJMV8yZpC0TH3WHmZjYieCnzSpWYspAhWXSnQG6T03KJ7Bs3uIYg4U8Hc-u5CzeHvTPKxcQT5jZ9zzoPwNX40BbEBrjDjBaCvHNbdz2kfZV4gsb2mRq3kOnVSJ3Mq1F1S8T_Wb6GhZ5_m6OIPUgMySYNR80TSrE3dvZdrFIkM8wNVoN_k4ojo-ThF_Lyqkm8T636EQPc-fGN3pSLs0Ul58qPvMYbI3isnbCsfK_3aLhNyftSu6LbyK7gDdszWFD7aBFqI7Xr2BEArCwU7VDj7wSzivFiLMf3-c422xzovAbyYS0PrmLEyCENxvTtTge3Pnw4FwCtSyMKpUKVkDByM4JvVCkgdQjDprvbeh49BMAH9SCJV-yOQUrA_40-HGUrLjWKtsRZ0FOFIBKLtxfsPb4ppCI1cHkwpuf2Yc6Yu6tXve5NPausrXtrPdxTclNdsZl4S4MDw-tYRgNaeyJ9eFyvNCyD42_uLnGw; __Secure-3PSIDCC=AKEyXzVoxiDzNh8ukZD8TEPG81d09JQGKwBJHYe0oCS15FweZR0wqAIp9PUHiFKxOfOFSREg8JY' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: script' \
+  -H 'sec-fetch-mode: no-cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --compressed ;
+curl 'https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.fa.WSxhJjxPNY4.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_h7JpZodXqXf600no-NChM5Sk1Jw/cb=gapi.loaded_0?le=scs' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://nayz-65789.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyD-y7IUxXC0sKeHVzapzVL1Bm8dpFqaGuE&appName=%5BDEFAULT%5D&v=10.12.0&eid=p&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.fa.WSxhJjxPNY4.O%2Fd%3D1%2Frs%3DAHpOoo_h7JpZodXqXf600no-NChM5Sk1Jw%2Fm%3D__features__' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyD-y7IUxXC0sKeHVzapzVL1Bm8dpFqaGuE' \
+  -H 'authority: identitytoolkit.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://4nayz.online' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  -H 'x-client-version: Chrome/JsCore/10.12.0/FirebaseCore-web' \
+  -H 'x-firebase-gmpid: 1:768370621888:web:0d76381edb4f6fa3491c25' \
+  --data-raw '{"idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjJmMjk1MGEyNGFlYWRkMjYzYzIxM2I2MDNhZjMxNWEzMjdiNmM3MjAiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiU2h1ZmZsZSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKQ1o1dkEtSkE5bXF3VzFhYmVDcERsQUxzc1c4Q0l4RkR2Q1pDV3ptYkxfRG1kenFVPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL25heXotNjU3ODkiLCJhdWQiOiJuYXl6LTY1Nzg5IiwiYXV0aF90aW1lIjoxNzgyNDU5MzgwLCJ1c2VyX2lkIjoiMGg1MGUwUXVxc1gxWEphd3VYcUxYSjVnTG1rMiIsInN1YiI6IjBoNTBlMFF1cXNYMVhKYXd1WHFMWEo1Z0xtazIiLCJpYXQiOjE3ODI0NTkzODAsImV4cCI6MTc4MjQ2Mjk4MCwiZW1haWwiOiJiYzFiY3JlekBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjEwNTg0OTYwNjM2ODk5NTg4MzIxNiJdLCJlbWFpbCI6WyJiYzFiY3JlekBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.RCBwEF83vKjtbPbG9dNoluFv9vmZoG0bjcbnCEhHgoKaFE2v0ZMN9Jp6xGJ4S3MA1Jd2lXRn8CHNcGU7dd1TlGRej9jwsayQX8s_fU0-6jeAesRdoXl9tGZX3SRcDQyRm7OwXed1B04D897bvryx7yAKPQw23AXWBMGUNcHXJrOySvvViDnRbc4ZYzAcUh8Br6EtMxj24Rdw_uWpk64pAEUoRJVfKGO3BGU3RJFDEF5m30I71yTQXyYEr6tVy4J_wSEXS58X0J15eKhAv9DYsI6ZOQzGQPr48dSXZUzSXJr7YPvXdWmFSole01rg2yRoAKTCm1p729FALEOVlcn0oA"}' \
+  --compressed ;
+curl 'https://nayz-65789.firebaseapp.com/__/auth/iframe.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://nayz-65789.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyD-y7IUxXC0sKeHVzapzVL1Bm8dpFqaGuE&appName=%5BDEFAULT%5D&v=10.12.0&eid=p&usegapi=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.fa.WSxhJjxPNY4.O%2Fd%3D1%2Frs%3DAHpOoo_h7JpZodXqXf600no-NChM5Sk1Jw%2Fm%3D__features__' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyD-y7IUxXC0sKeHVzapzVL1Bm8dpFqaGuE&cb=1782459658475' \
+  -H 'authority: www.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/json' \
+  -H 'origin: https://nayz-65789.firebaseapp.com' \
+  -H 'referer: https://nayz-65789.firebaseapp.com/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  -H 'x-client-version: Chrome/Iframe/2.20.7/FirebaseCore-web' \
+  --compressed ;
+curl 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyD-y7IUxXC0sKeHVzapzVL1Bm8dpFqaGuE&cb=1782459658475' \
+  -X 'OPTIONS' \
+  -H 'authority: www.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'access-control-request-headers: content-type,x-client-version' \
+  -H 'access-control-request-method: GET' \
+  -H 'origin: https://nayz-65789.firebaseapp.com' \
+  -H 'referer: https://nayz-65789.firebaseapp.com/' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/mx.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/za.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/kr.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/cz.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ca.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ba.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/qa.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ch.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/br.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ma.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ht.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/gb-sct.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/us.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/py.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/au.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/tr.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/de.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/cw.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ci.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ec.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/nl.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/jp.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/se.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/tn.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/be.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/eg.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ir.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/nz.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/es.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/cv.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/sa.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/uy.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/fr.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/sn.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/iq.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/no.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/ar.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/dz.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/at.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/jo.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/pt.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/cd.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/uz.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/co.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/gb-eng.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/hr.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/gh.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://flagcdn.com/w80/pa.png' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&RID=77624&CVER=22&X-HTTP-Session-Id=gsessionid&zx=eofff0s0iwc2&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'headers=X-Goog-Api-Client%3Agl-js%2F%20fire%2F10.12.0%0D%0AContent-Type%3Atext%2Fplain%0D%0AX-Firebase-GMPID%3A1%3A768370621888%3Aweb%3A0d76381edb4f6fa3491c25%0D%0AAuthorization%3ABearer%20eyJhbGciOiJSUzI1NiIsImtpZCI6IjJmMjk1MGEyNGFlYWRkMjYzYzIxM2I2MDNhZjMxNWEzMjdiNmM3MjAiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiU2h1ZmZsZSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKQ1o1dkEtSkE5bXF3VzFhYmVDcERsQUxzc1c4Q0l4RkR2Q1pDV3ptYkxfRG1kenFVPXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL25heXotNjU3ODkiLCJhdWQiOiJuYXl6LTY1Nzg5IiwiYXV0aF90aW1lIjoxNzgyNDU5MzgwLCJ1c2VyX2lkIjoiMGg1MGUwUXVxc1gxWEphd3VYcUxYSjVnTG1rMiIsInN1YiI6IjBoNTBlMFF1cXNYMVhKYXd1WHFMWEo1Z0xtazIiLCJpYXQiOjE3ODI0NTkzODAsImV4cCI6MTc4MjQ2Mjk4MCwiZW1haWwiOiJiYzFiY3JlekBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnb29nbGUuY29tIjpbIjEwNTg0OTYwNjM2ODk5NTg4MzIxNiJdLCJlbWFpbCI6WyJiYzFiY3JlekBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.RCBwEF83vKjtbPbG9dNoluFv9vmZoG0bjcbnCEhHgoKaFE2v0ZMN9Jp6xGJ4S3MA1Jd2lXRn8CHNcGU7dd1TlGRej9jwsayQX8s_fU0-6jeAesRdoXl9tGZX3SRcDQyRm7OwXed1B04D897bvryx7yAKPQw23AXWBMGUNcHXJrOySvvViDnRbc4ZYzAcUh8Br6EtMxj24Rdw_uWpk64pAEUoRJVfKGO3BGU3RJFDEF5m30I71yTQXyYEr6tVy4J_wSEXS58X0J15eKhAv9DYsI6ZOQzGQPr48dSXZUzSXJr7YPvXdWmFSole01rg2yRoAKTCm1p729FALEOVlcn0oA%0D%0A&count=2&ofs=0&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FthrillToken%22%5D%7D%2C%22targetId%22%3A2%7D%7D&req1___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FworldcupResults%22%5D%7D%2C%22targetId%22%3A4%7D%7D' \
+  --compressed ;
+curl 'https://timeapi.io/api/Time/current/zone?timeZone=UTC' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: https://4nayz.online' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: cross-site' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&RID=rpc&SID=lbkNAmo_WWO88FzGq43ENg&AID=0&CI=0&TYPE=xmlhttp&zx=haoixljtmg1r&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --compressed ;
+curl 'https://lh3.googleusercontent.com/a/ACg8ocJCZ5vA-JA9mqwW1abeCpDlALssW8CIxFDvCZCWzmbL_DmdzqU=s96-c' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77625&AID=7&zx=gmgyhxdn9ja9&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=2&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FpastLB%22%5D%7D%2C%22targetId%22%3A6%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77626&AID=7&zx=5dso2hwk7shp&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=3&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FpastWR%22%5D%7D%2C%22targetId%22%3A8%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77627&AID=7&zx=ho2rj7vs1ljw&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=4&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fusers%2F0h50e0QuqsX1XJawuXqLXJ5gLmk2%22%5D%7D%2C%22targetId%22%3A10%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77628&AID=7&zx=8mfk01onk83z&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=5&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A4%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77629&AID=22&zx=cmgrcl16hunq&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=6&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A6%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77630&AID=22&zx=386ynoxt0u9e&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=7&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A8%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77631&AID=22&zx=9lg1q8830v31&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=8&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FliveLB%22%5D%7D%2C%22targetId%22%3A12%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77632&AID=22&zx=y5w72f4ycdc5&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=9&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FliveWR%22%5D%7D%2C%22targetId%22%3A14%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77633&AID=22&zx=chv7aga9s61v&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=10&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2Fchallenges%22%5D%7D%2C%22targetId%22%3A16%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77634&AID=22&zx=uc4jmt6l8220&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=11&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FpastLB%22%5D%7D%2C%22targetId%22%3A18%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77635&AID=22&zx=l9wiz4i3ybbi&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=12&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FpastWR%22%5D%7D%2C%22targetId%22%3A20%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77636&AID=22&zx=jdtfw7gl7t8g&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=4&ofs=13&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FfeaturedOffers%22%5D%7D%2C%22targetId%22%3A22%7D%7D&req1___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FchallengeClaims%22%5D%7D%2C%22targetId%22%3A24%7D%7D&req2___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FgiveawayHistory%22%5D%7D%2C%22targetId%22%3A26%7D%7D&req3___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FstreamCodes%22%5D%7D%2C%22targetId%22%3A28%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77637&AID=34&zx=j1f0bsasnamk&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=17&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A12%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77638&AID=34&zx=8h7t14gg5gf4&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=18&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A14%7D' \
+  --compressed ;
+curl 'https://rushcdn.net/thumbnails_webp/thrill-dice.webp?c=7' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://rushcdn.net/thumbnails_webp/nlcduckhunters.webp?c=7' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://4nayz.online/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77639&AID=34&zx=hfpeeb6pbouj&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=19&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A16%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77640&AID=57&zx=qd56f4jx90yd&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=20&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A18%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77641&AID=57&zx=a0vxwmkx46k&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=21&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A20%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77642&AID=57&zx=2b5a8iuh6t3d&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=22&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A22%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77643&AID=57&zx=el0attxy5k33&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=23&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A24%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77644&AID=57&zx=f8kgtkn3es8c&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=24&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A26%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77645&AID=57&zx=53vo2i6csnqq&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=25&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A28%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77646&AID=57&zx=a86xi46m8l6h&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=26&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fgiveaways%2Fmd%22%5D%7D%2C%22targetId%22%3A30%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77647&AID=60&zx=o7kmd0k2eswb&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=3&ofs=27&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fgiveaways%2Fgx%22%5D%7D%2C%22targetId%22%3A32%7D%7D&req1___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fgiveaways%2Fgb%22%5D%7D%2C%22targetId%22%3A34%7D%7D&req2___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22addTarget%22%3A%7B%22documents%22%3A%7B%22documents%22%3A%5B%22projects%2Fnayz-65789%2Fdatabases%2F(default)%2Fdocuments%2Fconfig%2FchallengeClaims%22%5D%7D%2C%22targetId%22%3A36%7D%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77648&AID=77&zx=r28y3wiu8nqg&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=30&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A30%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77649&AID=80&zx=wmsjji1jzhcy&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=31&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A32%7D' \
+  --compressed ;
+curl 'https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects%2Fnayz-65789%2Fdatabases%2F(default)&gsessionid=gH24mcWvOTd3M24yD7b0AmHpdH5HuxlmtwyXUQMkl8XWlThpnMwXKQ&SID=lbkNAmo_WWO88FzGq43ENg&RID=77650&AID=80&zx=81ycyvlvinpa&t=1' \
+  -H 'authority: firestore.googleapis.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'origin: https://4nayz.online' \
+  -H 'referer: https://4nayz.online/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CLnbygE=' \
+  --data-raw 'count=1&ofs=32&req0___data__=%7B%22database%22%3A%22projects%2Fnayz-65789%2Fdatabases%2F(default)%22%2C%22removeTarget%22%3A34%7D' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYmK-4W4nIppT4.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/exo2/v26/7cHmv4okm5zmbtYoK-4W4nIp.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/rajdhani/v17/LDIxapCSOBg7S-QT7p4HM-aGW-rO.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/rajdhani/v17/LDI2apCSOBg7S-QT7pa8FvOreefkkbIx.woff2' \
+  -H 'Referer;' \
+  --compressed
